@@ -1,0 +1,95 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 106px auto;
+}
+
+.title_team {
+  margin-bottom: 34px;
+}
+
+.hr-line_left {
+  margin-left: 0;
+}
+
+.team__our-team {
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 72px; */
+}
+
+.team__main-photo {
+  width: 324px;
+  height: 460px;
+  background-color: #ff3f40;
+}
+
+.team__persons {
+  display: flex;
+  flex-direction: column;
+  margin: 18px 0 0 72px;
+}
+
+.team__person-name {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.team__person-about {
+  width: 662px;
+  line-height: 175%;
+  margin-bottom: 46px;
+}
+
+.team__media-list {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.team__media-item {
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.team__media-item:hover {
+  color: #ff3f40;
+}
+
+.team__photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team__person-photo {
+  width: 198px;
+  height: 218px;
+  background-color: #ff3f40;
+}
+
+.person-text {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  left: 5px;
+  bottom: 0;
+  width: 188px;
+  /* height: 36px; */
+  border-radius: 6px 6px 0 0;
+  background-color: #000;
+  opacity: 0.5;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.16px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
