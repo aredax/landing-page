@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #2c2c2c;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  width: 1250px;
+}
+
+.footer__copyright {
+  color: #b8b8b8;
+  margin: 44px 0;
+}
+
+.footer__social-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer__icon {
+  cursor: pointer;
+}
+
+.footer__icon:hover {
+  transform: scale(1.2);
+}
