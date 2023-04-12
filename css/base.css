@@ -3,21 +3,12 @@
 }
 
 .page {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-  flex-wrap: wrap;
   font-family: 'Open Sans';
 }
 
-.page::selection {
-  background-color: #ff2d2d;
-  color: #fff;
-  padding: 5px;
-}
-
 .container {
-  width: 1250px;
+  width: 100%;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
