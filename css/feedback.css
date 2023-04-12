@@ -65,9 +65,9 @@
   margin-bottom: 30px;
 }
 
-@media (max-width: 1250px) {
+@media screen (max-width: 1024px) {
   .feedback__contacts {
-    width: 50%;
+    width: 75%;
   }
   .feedback__button {
     width: 75%;

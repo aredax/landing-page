@@ -53,3 +53,12 @@
   height: 300px;
   background-color: #5281ff;
 }
+
+@media screen (max-width: 1024px) {
+  .feature-product {
+    width: 75%;
+  }
+  .feature-product_item {
+    width: 75%;
+  }
+}

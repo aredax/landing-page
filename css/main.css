@@ -72,3 +72,9 @@
   width: 50%;
   border-radius: 14px 0 0 14px;
 }
+
+@media screen (max-width: 1024px) {
+  .intro__title, .intro__video {
+    width: 90%;
+  }
+}

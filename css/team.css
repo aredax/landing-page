@@ -15,7 +15,6 @@
 .team__our-team {
   display: flex;
   flex-direction: row;
-  /* margin-left: 72px; */
 }
 
 .team__main-photo {
@@ -92,4 +91,13 @@
   text-align: center;
   text-transform: uppercase;
   padding: 10px 0;
+}
+
+@media screen (max-width: 1024px) {
+  .team__main-photo {
+    width: 90%;
+  }
+  .team__person-photo {
+    width: 90%;
+  }
 }

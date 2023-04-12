@@ -56,3 +56,11 @@
 .provide__blocks-text {
   line-height: 175%;
 }
+
+@media screen (max-width: 1024px) {
+  .button_white, .provide__intro, .provide__block {
+    width: 90%;
+  }
+  .provide__blocks {
+    gap: 40px 10px;}
+}
