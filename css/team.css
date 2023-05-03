@@ -93,11 +93,17 @@
   padding: 10px 0;
 }
 
-@media screen (max-width: 1024px) {
-  .team__main-photo {
-    width: 90%;
+@media screen and (max-width: 1250px) {
+  .team__our-team {
+    flex-direction: column;
+    padding-left: 20px;
   }
   .team__person-photo {
-    width: 90%;
+    width: 100px;
+    height: 100px;
+  }
+  .caption {
+    left: 0;
+    width: 100px;
   }
 }

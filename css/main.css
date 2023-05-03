@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90px;
+  height: 90px;
   background-color: #000;
   margin: 30px auto 102px auto;
 }
@@ -47,7 +47,8 @@
 }
 
 .intro__title {
-  width: 618px;
+  width: 100%;
+  max-width: 618px;
   font-weight: 900;
   font-size: 60px;
   text-transform: uppercase;
@@ -57,7 +58,8 @@
 }
 
 .button_red-short {
-  width: 226px;
+  width: 100%;
+  max-width: 226px;
   height: 56px;
   background-color: #ff2d2d;
   color: #fff;
@@ -65,16 +67,90 @@
 }
 
 .button:hover {
-  background-color: #ff2d2d9d;
+  background-color: #ff2d2d;
 }
 
 .intro__video {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
   width: 50%;
   border-radius: 14px 0 0 14px;
 }
 
-@media screen (max-width: 1024px) {
+/* Бургер-меню */
+
+/* .burger_block-none {
+  display: block;
+} */
+
+.burger__button {
+  display: none;
+  min-width: 600px;
+  height: 90px;
+  /* background-image: url('../img/'); */
+  /* background-size: 100% 100%; */
+  /* background-repeat: no-repeat; */
+  background-color: #000000;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  margin: 30px 0;
+  padding: 0;
+  z-index: 1;
+}
+
+/* .burger__button:hover {
+  background-color: #f30;
+} */
+
+.burger {
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.burger__list {
+  display: none;
+  position: absolute;
+  top: 90px;
+  width: 160px;
+  height: 400px;
+  background-color: #111;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1250px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+  }
   .intro__title, .intro__video {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro__video {
     width: 90%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .header__menu {
+    display: none;
+  }
+  .burger__button {
+    display: block;
+    cursor: pointer;
   }
 }

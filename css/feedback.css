@@ -10,7 +10,10 @@
 }
 
 .feedback__description {
-  width: 752px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 752px;
 }
 
 .feedback__info {
@@ -22,12 +25,14 @@
   height: 70px;
   background-color: #00000010;
   color: #000;
-  margin: 0 50px 44px 0;
+  margin-bottom: 44px;
   padding: 26px 50px;
+  gap: 50px;
 }
 
 .feedback__textarea {
-  width: 730px;
+  width: 100%;
+  max-width: 730px;
   height: 252px;
   background-color: #00000010;
   color: #000;
@@ -40,6 +45,7 @@
   height: 76px;
   background-color: #ff3b3b;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .feedback__contacts {
@@ -65,11 +71,25 @@
   margin-bottom: 30px;
 }
 
-@media screen (max-width: 1024px) {
-  .feedback__contacts {
-    width: 75%;
+@media screen and (max-width: 1250px) {
+  .feedback {
+    margin-bottom: 30px;
   }
-  .feedback__button {
-    width: 75%;
+  .feedback__info {
+    flex-direction: column;
+  }
+  .feedback__input {
+    gap: 16px;
+  }
+  .feedback__contacts {
+    width: 732px;
+    padding: 50px auto;
+  }
+}
+
+@media screen and (max-width: 732px) {
+  .feedback__contacts {
+    width: 100%;
+    margin: 10px;
   }
 }

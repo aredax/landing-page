@@ -54,11 +54,32 @@
   background-color: #5281ff;
 }
 
-@media screen (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
+  .features__menu-list {
+    gap: 30px;
+  }
   .feature-product {
     width: 75%;
   }
   .feature-product_item {
-    width: 75%;
+    width: 190px;
+    height: 200px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .features__menu-list {
+    gap: 10px;
+  }
+  .feature-product_item {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .features__menu-list {
+    flex-direction: column;
+    gap: 10px;
   }
 }

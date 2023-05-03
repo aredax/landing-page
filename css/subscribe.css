@@ -45,3 +45,17 @@ button:hover {
   background-color: #fd5d5d;
 }
 
+@media screen and (max-width: 1250px) {
+  .subscribe {
+    padding: 144px 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subscribe {
+    padding: 144px 50px;
+  }
+  .subscribe__input {
+    width: 480px;
+  }
+}
