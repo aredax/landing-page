@@ -5,5 +5,6 @@ const burgerMenu = document.querySelector('.burger__list');
 burgerButton.addEventListener('click', toggleBurger);
 
 function toggleBurger() {
-  burgerMenu.classList.toggle('burger_block-none');
+  burgerMenu.classList.toggle('burger__block-none');
 }
+
